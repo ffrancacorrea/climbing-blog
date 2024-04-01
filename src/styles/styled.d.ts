@@ -11,6 +11,7 @@ declare module "styled-components" {
       background: string;
       pinkBackground: string;
       blueBackground: string;
+      greyBackground: string;
     };
   }
 }

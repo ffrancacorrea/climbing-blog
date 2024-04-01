@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import banner from "../../assets/banner.jpg";
 
-import { Navbar } from "./Navbar";
-
 const Wrapper = styled.div`
+  margin: 2% 0;
+  margin-top: -5%;
+  z-index: 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,9 +14,9 @@ const Wrapper = styled.div`
   background-image: ${({ theme }) =>
     `linear-gradient(to left bottom, ${theme.colors.pinkBackground}, ${theme.colors.blueBackground} 70%), url(${banner})`};
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   svg {
-    filter: drop-shadow(1px 1px 1px #000000);
+    filter: drop-shadow(1px 1px 1px white);
   }
   .custom-shape-divider-bottom-1711973093 {
     position: absolute;
@@ -36,6 +37,26 @@ const Wrapper = styled.div`
   }
 
   .custom-shape-divider-bottom-1711973093 .shape-fill {
+    fill: #ffffff;
+  }
+  .custom-shape-divider-top-1711997092 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1711997092 svg {
+    position: relative;
+    display: block;
+    width: calc(111% + 1.3px);
+    height: 64px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-top-1711997092 .shape-fill {
     fill: #ffffff;
   }
 `;
@@ -76,12 +97,24 @@ const Button = styled.div`
   cursor: pointer;
 `;
 
-export default function Header() {
+export default function Locations() {
   return (
     <Wrapper>
-      <Navbar />
+      <div className="custom-shape-divider-top-1711997092">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 0L0 0 892.25 114.72 1200 0z"
+            className="shape-fill"
+          ></path>
+        </svg>
+      </div>
       <Container>
-        <h1>climbing</h1>
+        <h1>locations</h1>
         <Description>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
           dolorem, magni inventore corrupti impedit ipsam consequatur earum quam

@@ -6,17 +6,16 @@ const Wrapper = styled.div`
   width: 100%;
   font-size: 25px;
   color: ${({ theme }) => theme.colors.tertiary};
-  text-shadow: 1px 1px 5px #000000;
+  text-shadow: 1px 1px 3px #000000;
 `;
 const NavigationSearch = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 25px;
   margin-right: 5%;
-  cursor: pointer;
   svg {
     margin-top: 8px;
-    filter: drop-shadow(2px 2px 5px #000000);
+    filter: drop-shadow(1px 1px 3px #000000);
   }
   div {
     margin-left: 5px;

@@ -2,12 +2,13 @@ import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   colors: {
-    primary: "#666666",
-    secondary: "#732061",
+    primary: "#b5b5b5",
+    secondary: "#96146f",
     tertiary: "white",
     background: "white",
-    pinkBackground: "rgba(200, 19, 93, 0.40)",
-    blueBackground: "rgba(7, 19, 200, 0.40)",
+    pinkBackground: "rgba(250, 20, 160, 0.40)",
+    blueBackground: "rgba(11, 3, 156, 0.40)",
+    greyBackground: "#454545",
   },
 };
 
