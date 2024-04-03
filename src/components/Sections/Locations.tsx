@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from "../../assets/banner.jpg";
+import banner from "../../assets/second_banner.avif";
 
 const Wrapper = styled.div`
   margin: 2% 0;
