@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/climbing-blog/static/css/main.e6c13ad2.css",
+    "main.js": "/climbing-blog/static/js/main.3253bbf2.js",
+    "static/js/453.84cbed18.chunk.js": "/climbing-blog/static/js/453.84cbed18.chunk.js",
+    "static/media/indoor.jpg": "/climbing-blog/static/media/indoor.9ed2b2746f93628235e8.jpg",
+    "static/media/banner.jpg": "/climbing-blog/static/media/banner.9c361c2497610932bd2c.jpg",
+    "static/media/outdoor.jpg": "/climbing-blog/static/media/outdoor.2797e79fb264b764772a.jpg",
+    "static/media/second_banner.avif": "/climbing-blog/static/media/second_banner.d7c30ff2367cac43a8f6.avif",
+    "index.html": "/climbing-blog/index.html",
+    "main.e6c13ad2.css.map": "/climbing-blog/static/css/main.e6c13ad2.css.map",
+    "main.3253bbf2.js.map": "/climbing-blog/static/js/main.3253bbf2.js.map",
+    "453.84cbed18.chunk.js.map": "/climbing-blog/static/js/453.84cbed18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3253bbf2.js"
+  ]
+}
