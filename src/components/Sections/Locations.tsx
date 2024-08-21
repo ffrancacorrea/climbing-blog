@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import banner from "../../assets/second_banner.avif";
+import styled from "styled-components"
+import banner from "../../assets/second_banner.avif"
 
 const Wrapper = styled.div`
   margin: 2% 0;
@@ -59,7 +59,7 @@ const Wrapper = styled.div`
   .custom-shape-divider-top-1711997092 .shape-fill {
     fill: #ffffff;
   }
-`;
+`
 
 const Container = styled.div`
   display: flex;
@@ -77,13 +77,20 @@ const Container = styled.div`
     font-weight: 800;
     margin-bottom: 0;
   }
-`;
+  @media (max-width: 700px) {
+    height: 75vh;
+    font-size: 20px;
+  }
+`
 
 const Description = styled.div`
   width: 40%;
   margin-top: 10px;
   text-align: justify;
-`;
+  @media (max-width: 700px) {
+    width: 80%;
+  }
+`
 
 const Button = styled.div`
   width: 100%;
@@ -95,7 +102,15 @@ const Button = styled.div`
   height: 60px;
   border: ${({ theme }) => `5px solid ${theme.colors.secondary}`};
   cursor: pointer;
-`;
+  @media (max-width: 1024px) {
+    z-index: 3;
+    background-color: white;
+  }
+  @media (max-width: 700px) {
+    width: 100px;
+    height: 30px;
+  }
+`
 
 export default function Locations() {
   return (
@@ -137,5 +152,5 @@ export default function Locations() {
         </svg>
       </div>
     </Wrapper>
-  );
+  )
 }

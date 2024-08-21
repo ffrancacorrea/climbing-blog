@@ -1,11 +1,12 @@
-import styled from "styled-components";
-import indoor from "../../assets/indoor.jpg";
-import outdoor from "../../assets/outdoor.jpg";
+import styled from "styled-components"
+import indoor from "../../assets/indoor.jpg"
+import outdoor from "../../assets/outdoor.jpg"
 
-import Card from "../Card";
-import Locations from "./Locations";
+import Card from "../Card"
+import Locations from "./Locations"
 
 const Wrapper = styled.div`
+  display: flex;
   margin: 2% 0;
   position: relative;
   display: flex;
@@ -16,36 +17,66 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   width: 100%;
   height: 100%;
-`;
+`
 
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
   height: 100%;
   font-size: 30px;
-  margin: 0 5%;
   font-family: "Noto Sans JP", sans-serif;
+  width: 100%;
   h1 {
     //text-shadow: 1px 1px 2px #000000;
     font-style: normal;
     font-weight: 800;
   }
-`;
+  @media (min-width: 1024px) {
+    margin: 0 5%;
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -10%;
+  }
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
+`
 
 const DescriptionWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  //justify-content: space-around;
+  margin-left: 3%;
   z-index: 1;
-`;
+  @media (max-width: 1024px) {
+    margin: 10%;
+  }
+`
 
 const Description = styled.div`
   width: 80%;
   margin-top: 10px;
   text-align: justify;
   color: ${({ theme }) => theme.colors.primary};
-`;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+`
+
+const CardWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  @media (max-width: 700px) {
+    div {
+      width: 300px;
+      height: 400px;
+    }
+  }
+`
 
 const Button = styled.div`
   width: 100%;
@@ -57,13 +88,19 @@ const Button = styled.div`
   height: 60px;
   border: ${({ theme }) => `5px solid ${theme.colors.secondary}`};
   cursor: pointer;
-`;
+  @media (max-width: 700px) {
+    width: 100px;
+    height: 30px;
+  }
+`
 
 export default function About() {
   return (
     <Wrapper>
       <Container>
-        <Card image={indoor} style={{ marginTop: "-7%" }}></Card>
+        <CardWrapper>
+          <Card image={indoor} style={{ marginTop: "-10%" }}></Card>
+        </CardWrapper>
         <DescriptionWrapper>
           <h1>indoor</h1>
           <Description>
@@ -87,9 +124,10 @@ export default function About() {
           </Description>
           <Button>more</Button>
         </DescriptionWrapper>
-
-        <Card image={outdoor} style={{ marginTop: "-7%" }}></Card>
+        <CardWrapper>
+          <Card image={outdoor} style={{ marginTop: "-10%" }}></Card>
+        </CardWrapper>
       </Container>
     </Wrapper>
-  );
+  )
 }

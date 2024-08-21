@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import banner from "../../assets/banner.jpg";
+import styled from "styled-components"
+import banner from "../../assets/banner.jpg"
 
-import { Navbar } from "./Navbar";
+import { Navbar } from "./Navbar"
 
 const Wrapper = styled.div`
   position: relative;
@@ -38,7 +38,10 @@ const Wrapper = styled.div`
   .custom-shape-divider-bottom-1711973093 .shape-fill {
     fill: #ffffff;
   }
-`;
+  @media (max-width: 700px) {
+    height: 70vh;
+  }
+`
 
 const Container = styled.div`
   display: flex;
@@ -56,13 +59,20 @@ const Container = styled.div`
     font-weight: 800;
     margin-bottom: 0;
   }
-`;
+  @media (max-width: 700px) {
+    height: 80%;
+    font-size: 20px;
+  }
+`
 
 const Description = styled.div`
   width: 40%;
   margin-top: 10px;
   text-align: justify;
-`;
+  @media (max-width: 700px) {
+    width: 80%;
+  }
+`
 
 const Button = styled.div`
   width: 100%;
@@ -74,7 +84,11 @@ const Button = styled.div`
   height: 60px;
   border: ${({ theme }) => `5px solid ${theme.colors.secondary}`};
   cursor: pointer;
-`;
+  @media (max-width: 700px) {
+    width: 150px;
+    height: 45px;
+  }
+`
 
 export default function Header() {
   return (
@@ -104,5 +118,5 @@ export default function Header() {
         </svg>
       </div>
     </Wrapper>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const Wrapper = styled.div`
   display: flex;
@@ -7,7 +7,11 @@ const Wrapper = styled.div`
   font-size: 25px;
   color: ${({ theme }) => theme.colors.tertiary};
   text-shadow: 1px 1px 3px #000000;
-`;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+`
 const NavigationSearch = styled.div`
   display: flex;
   justify-content: space-between;
@@ -20,24 +24,24 @@ const NavigationSearch = styled.div`
   div {
     margin-left: 5px;
   }
-`;
+`
 const NavigationLinks = styled.div`
   display: flex;
   flex: 1;
   margin: 25px;
   justify-content: space-between;
-`;
+`
 const NavigationItems = styled.div`
   display: flex;
   justify-content: space-between;
-`;
+`
 const NavigationItem = styled.div`
   display: flex;
   margin: 0 30px;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.tertiary};
   cursor: pointer;
-`;
+`
 
 export function Navbar() {
   return (
@@ -69,5 +73,5 @@ export function Navbar() {
         <div>search</div>
       </NavigationSearch>
     </Wrapper>
-  );
+  )
 }
